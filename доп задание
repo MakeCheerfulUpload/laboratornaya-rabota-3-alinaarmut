@@ -1,0 +1,17 @@
+import re
+
+regexp = r"\+?\d{0,2}[ ]?[-(]?\d{3}[-)]?\s?\d{3}[- ]?\d{2}[- ]?\d{2}$"
+
+
+string = input()
+a = re.findall(regexp, string)
+if a:
+    print(a)
+else:
+    print("None")
+
+
+# +7 (981) 855-69-64
+#  5 759355 94628873
+# 8 987 g56 78 90
+# 8 981 855 69 64
